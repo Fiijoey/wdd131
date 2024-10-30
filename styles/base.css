@@ -80,7 +80,8 @@ section {
     grid-column: 1 / 2;
 }
 
-p, ul {
+p,
+ul {
     font: var(--paragraph-font);
     grid-column: 1 / 2;
     font-size: small;
