@@ -15,10 +15,6 @@ h2 {
     font-size: larger;
 }
 
-p {
-    font-family: var(--paragraph-font);
-}
-
 body {
     font-family: var(--paragraph-font);
     display: grid;
@@ -86,6 +82,8 @@ section {
 p {
     font: var(--paragraph-font);
     grid-column: 1 / 2;
+    font-size: small;
+    font-style: normal;
 }
 
 .about-card p {
