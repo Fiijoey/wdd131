@@ -1,17 +1,18 @@
 @font-face {
-    font-family : 'Alegreya';
-    font-style : normal;
-    font-weight : 400;
-    font-display : swap;
-    src : url(https://fonts.gstatic.com/s/alegreya/v36/4UacrEBBsBhlBjvfkQjt71kZfyBzPgNG9hUI_A.ttf) format('truetype');
-    }
-    @font-face {
-    font-family : 'Montserrat';
-    font-style : normal;
-    font-weight : 400;
-    font-display : swap;
-    src : url(https://fonts.gstatic.com/s/montserrat/v29/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Ew-.ttf) format('truetype');
-    }
+    font-family: 'Alegreya';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/alegreya/v36/4UacrEBBsBhlBjvfkQjt71kZfyBzPgNG9hUI_A.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/montserrat/v29/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Ew-.ttf) format('truetype');
+}
 
 :root {
     --primary-color: #e7cba1;
@@ -33,9 +34,9 @@ p {
 }
 
 body {
-display : grid;
-height : 100vh;
-grid-auto-rows : max-content;
+    display: grid;
+    height: 100vh;
+    grid-auto-rows: max-content;
 }
 
 header {
@@ -72,12 +73,12 @@ nav a:hover {
 }
 
 main {
-    grid-column : 1 / 4;
-    background : var(--back-color);
-    padding : 1rem;
-    display : grid;
-    grid-auto-rows : max-content;
-    }
+    grid-column: 1 / 4;
+    background: var(--back-color);
+    padding: 1rem;
+    display: grid;
+    grid-auto-rows: max-content;
+}
 
 .about-card,
 .resource-card {
@@ -88,11 +89,11 @@ main {
 }
 
 .about-card {
-    display : grid;
-    grid-auto-rows : max-content;
-    background : var(--accent1-color);
-    grid-column : 1 / 2;
-    }
+    display: grid;
+    grid-auto-rows: max-content;
+    background: var(--accent1-color);
+    grid-column: 1 / 2;
+}
 
 p,
 ul {
@@ -119,12 +120,12 @@ img {
 }
 
 .country-info {
-grid-column : 1 / 3;
-display : grid;
-grid-auto-rows : max-content;
-border-radius : 12px;
-background : var(--accent1-color);
-padding-right : 20px;
+    grid-column: 1 / 3;
+    display: grid;
+    grid-auto-rows: max-content;
+    border-radius: 12px;
+    background: var(--accent1-color);
+    padding-right: 20px;
 }
 
 .heading {
