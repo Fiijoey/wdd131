@@ -1,4 +1,4 @@
-@@font-face {
+@font-face {
     font-family: 'Alegreya';
     font-style: normal;
     font-weight: 400;
@@ -6,7 +6,7 @@
     src: url(https://fonts.gstatic.com/s/alegreya/v36/4UacrEBBsBhlBjvfkQjt71kZfyBzPgNG9hUI_A.ttf) format('truetype');
 }
 
-@@font-face {
+@font-face {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
