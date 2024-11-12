@@ -53,8 +53,7 @@ function manageTasks(e) {
   const parent = e.target.closest("li");
   if (e.target.dataset.action === "delete") {
     removeTask(parent);
-  }
-  if (e.target.dataset.action === "complete") {
+  } else if (e.target.dataset.action === "complete") {
     completeTask(parent);
   }
 }
