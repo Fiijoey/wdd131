@@ -1,13 +1,14 @@
 let tasks = [];
 
 function taskTemplate(task) {
-  return ` <li ${task.completed ? 'class="strike"' : ""}>
-                  <p>${task.detail}</p>
-                    <div>
-                        <span data-action="delete">❎ </span>
-                        <span data-action="complete">✅ </span>
-                     </div>
-                </li>`;
+  return `
+    <li ${task.completed ? 'class="strike"' : ""}>
+      <p>${task.detail}</p>
+      <div>
+        <span data-function="delete">❎</span>
+        <span data-function="complete">✅</span>
+      </div>
+    </li>`;
 }
 
 function renderTasks(tasks) {
