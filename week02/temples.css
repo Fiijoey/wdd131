@@ -20,7 +20,8 @@ main{
 }
 
 figure{
-    
+    padding: 20px;
+    text-align: center;
 }
 body{
     font-family: var(--heading-font);
