@@ -10,6 +10,9 @@
 h2{
     font-size: 2rem;
 }
+img{
+    width: 250px;
+}
 
 main{
     max-width: 700px;
@@ -18,9 +21,16 @@ main{
     display: grid;
     grid-template-columns: 1fr;
 }
+main h2{
+    padding: 20px;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+}
 
 figure{
-    padding: 20px;
+    padding: 10px;
     text-align: center;
 }
 body{
