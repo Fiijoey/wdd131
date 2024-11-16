@@ -10,11 +10,18 @@
 		flex-direction: row;
 	}
 	nav ul{
+		display: flex;
+		left: 0;
 		flex: 1 1 100%;
 	}
 
 	.container{
         grid-template-columns: repeat(3, 1fr);
         gap: 5px;
+	}
+
+	.hamburger{
+		display: none;
+		cursor: pointer;
 	}
 }
