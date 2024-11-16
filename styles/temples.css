@@ -65,6 +65,10 @@ nav ul li a {
     text-decoration: none;
 }
 
+nav:hover{
+    background-color: rgb(136, 115, 85);
+}
+
 nav ul li:hover {
     border-radius: 20px;
     background-color: rgb(136, 115, 85);
