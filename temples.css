@@ -1,43 +1,49 @@
-:root{
+:root {
     --heading-font: "Montserrat", serif;
     --paragraph-font: "Alegreya", serif;
 }
-*{
+
+* {
     margin: 0px;
     padding: 0;
     box-sizing: border-box;
 }
-h2{
+
+h2 {
     font-size: 2rem;
 }
-img{
+
+img {
     width: 250px;
 }
 
-main{
+main {
     max-width: 700px;
     text-align: center;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr;
 }
-main h2{
+
+main h2 {
     padding: 20px;
 }
-.container{
+
+.container {
     display: grid;
     grid-template-columns: 1fr;
 }
 
-figure{
+figure {
     padding: 10px;
     text-align: center;
 }
-body{
+
+body {
     font-family: var(--heading-font);
 }
 
-header{
+header {
     display: grid;
     padding: 20px;
     background-color: rgb(124, 104, 77);
@@ -45,60 +51,62 @@ header{
     box-shadow: 0 0 30px #333;
 }
 
-nav ul{
+nav ul {
     display: flex;
     flex-direction: column;
     list-style-type: none;
 }
 
-nav ul li a{
-	display: block;
-	color: #fff;
-	text-align: center;
-	padding: 1rem;
-	text-decoration: none;
+nav ul li a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
 }
- nav ul li:hover{
+
+nav ul li:hover {
     border-radius: 20px;
     background-color: rgb(136, 115, 85);
     color: black;
     font-size: 1.2rem;
 
- }
-
-.bar{
-   display: block;
-   width: 25px; 
-   height: 3px;
-   margin: 5px auto;
-   -webkit-transition: all 0.3s ease-in-out;
-   transition: all 0.3s ease-in-out;
-   background-color: white;
 }
-.hamburger{
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+.hamburger {
     display: block;
 
 }
 
-.hamburger.active .bar:nth-child(2){
+.hamburger.active .bar:nth-child(2) {
     opacity: 0;
 }
 
-.hamburger.active .bar:nth-child(1){
+.hamburger.active .bar:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
 }
 
-.hamburger.active .bar:nth-child(3){
+.hamburger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
 }
 
-.nav-tem{
+.nav-tem {
     margin: 16px 0;
- 
+
 
 }
 
-.nav-menu.active{
+.nav-menu.active {
     left: 0;
 }
 
@@ -110,8 +118,8 @@ footer {
     grid-column: 1 / 4;
 }
 
-@media (max-width: 740px){
-    .nav-menu{
+@media (max-width: 740px) {
+    .nav-menu {
         position: fixed;
         left: -100%;
         top: 80px;
@@ -121,15 +129,15 @@ footer {
         width: 100%;
         text-align: center;
         transition: 0.3s;
-    
+
     }
 
-    header{
+    header {
         display: block;
         text-align: center;
     }
 
-    .navbar{
+    .navbar {
         margin-top: 15px;
     }
 }

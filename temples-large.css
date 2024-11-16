@@ -5,22 +5,23 @@
 		justify-content: space-between;
 	}
 
-	nav ul{
+	nav ul {
 		justify-content: flex-end;
 		flex-direction: row;
 	}
-	nav ul{
+
+	nav ul {
 		display: flex;
 		left: 0;
 		flex: 1 1 100%;
 	}
 
-	.container{
-        grid-template-columns: repeat(3, 1fr);
-        gap: 5px;
+	.container {
+		grid-template-columns: repeat(3, 1fr);
+		gap: 5px;
 	}
 
-	.hamburger{
+	.hamburger {
 		display: none;
 		cursor: pointer;
 	}
