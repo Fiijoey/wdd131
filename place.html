@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals, Place, HTML, CSS and JavaScript">
+    <meta name="author" content="Joseph Fiifi Mensah">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <script defer src="scripts/place.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1>Accra, Ghana</h1>
+    </header>
+    <main>
+        <div id="content">
+            <picture>
+                <source  media="(min-width: 900px)"
+                        srcset="images/heromain.webp">
+                <source media="(min-width: 600px)"
+                        srcset="images/subhero.webp">
+                <img src="images/heromain.webp" alt="Ghana" width="100%" height="600">
+            </picture>
+
+            <div id="data">
+                <div id="i-head">
+                    <h2>Data </h2>
+                    <img id="img" src="images/dataicon.svg" alt="date icon">
+                </div>
+                <label for="">Area :</label>
+                <h2>239,567sq km</h2>
+                <label>Population : </label>
+                <h2>35 million</h2>
+                <label for="">Capital :</label>
+                <h2>Accra</h2>
+                <label>Languages : </label>
+                <h2>English, Akan, Ewe and Twi</h2>
+                <label>Currency : </label>
+                <h2>Ghana Cedi(GHS)</h2>
+                <label for="">Time Zone :</label>
+                <h2>GMT</h2>
+                <label>Calling Code :</label>
+                <h2>+233</h2>
+                <label>Internet TLD :</label>
+                <h2>.gh</h2>
+
+            </div>
+
+            <div id="weather">
+                <div id="t-head">
+                    <h2>Weather</h2>
+                    <img id="img" src="images/weather-svgrepo-com.svg" alt="weather icon">
+                </div>
+                <label for="">Temperature:</label>
+                <h2>24°C</h2>
+                <label for="">Conditions :</label><h2>Sunny</h2>
+                <label for="">Wind :</label><h2>5 km/h</h2>
+                <label for="">Wind Chill :</label><h2>9.8°C</h2>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&#169;<span id="currentyear"></span> &nbsp; &nbsp; Joseph Fiifi Mensah &nbsp; &nbsp; Accra, Ghana</p>
+        <p>Last Modified : <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>
