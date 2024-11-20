@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals, Place, HTML, CSS and JavaScript">
+    <meta name="author" content="Joseph Fiifi Mensah">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya&family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <script defer src="scripts/place.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1>Accra, Ghana</h1>
+    </header>
+    <main>
+        <div id="content">
+            <picture>
+                <source srcset="images/heromain.webp" media="min-width: 1000px">
+                <source srcset="images/subhero.webp" media="min-width: 550px">
+                <img src="images/heromain.webp" alt="Ghana" width="100%" height="600">
+            </picture>
+            <div id="data">
+                <div id="data-head">
+                    <h2>Data </h2>
+                    <img id="img" src="images/dataicon.svg" alt="date icon">
+                </div>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div id="weather">
+                <div id="weather-head">
+                    <h2>Weather</h2>
+                    <img id="img" src="images/weather-svgrepo-com.svg" alt="weather icon">
+                </div>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&#169;<span id="currentyear"></span> &nbsp; &nbsp; Joseph Fiifi Mensah &nbsp; &nbsp; Accra, Ghana</p>
+        <p>Last Modified : <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>
