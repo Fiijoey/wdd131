@@ -7,6 +7,10 @@
     --heading-font: "Montserrat", serif;
     --paragraph-font: "Alegreya", serif;
 }
+img{
+    width: 100%;
+    height: auto;
+}
 
 *{
     margin: 0;
@@ -115,6 +119,12 @@ picture{
     justify-content: space-around;
 }
 
+#t-head #img:hover{
+    cursor: pointer;
+    width: 25px;
+
+}
+
 
 
 
@@ -124,4 +134,35 @@ footer {
     padding: 1rem;
     text-align: center;
     grid-column: 1 / 4;
+}
+
+@media (max-width: 740px) {
+    #content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #data, #weather{
+        width: auto;
+        padding-top: 140px;
+        margin-left: 0;
+    }
+
+    #i-head, #t-head{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0);
+        color: black;
+        font-size: 2rem;
+    }
+    #i-head h2, #t-head h2{
+        font-weight: 500;
+    }
+
+   #i-head img, #t-head img{
+    width: 60px;
+    padding-top: 15px;
+   }
+
 }
