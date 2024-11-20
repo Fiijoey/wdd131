@@ -22,7 +22,6 @@ img{
 label{
     text-align: right;
     font-size: smaller;
-    font-style: bold;
     font-weight: 700;
 }
 h2{
@@ -99,7 +98,7 @@ picture{
     justify-content: space-around;
 }
 
-#img{
+#icon{
     width: 30px;
 }
 #i-head, #t-head{
@@ -119,8 +118,8 @@ picture{
     justify-content: space-around;
 }
 
-#t-head #img:hover{
-    cursor: pointer;
+#t-head h2::after{
+    content: "   -";
     width: 25px;
 
 }
