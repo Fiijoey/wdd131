@@ -8,18 +8,23 @@
     --paragraph-font: "Alegreya", serif;
 }
 
-h1,
-h2,
-p {
+*{
+    margin: 0;
     font-family: var(--heading-font);
-    font-size: medium;
     margin: 0px;
     padding: 0px;
 }
-*{
-    margin: 0;
-}
 
+label{
+    text-align: right;
+    font-size: smaller;
+    font-style: bold;
+    font-weight: 700;
+}
+h2{
+    font-size: smaller;
+    font-weight: 300;
+}
 
 body {
     display: grid;
@@ -51,29 +56,64 @@ picture{
 }
 
 #data{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    position: relative;
     z-index: 1;
     grid-column: 2 / 4;
     grid-row: 2 / 4;
+    width: 250px;
     background-color: rgba(255, 255, 255, 0.482);
+    padding: 1rem;
+    padding-top: 50px;
+    margin-left: 10px;
+    gap: 10px;
 }
 
+
 #weather{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    position: relative;
     z-index: 1;
     grid-column: 7 /9;
     grid-row: 5 /7;
+    width: 200px;
     background-color: rgba(255, 255, 255, 0.428);
+    padding: 1rem;
+    padding-top: 50px;
+    margin-left: 10px;
+    gap: 10px;
+}
+
+#t-head{
+    margin-top: 10px;
+    margin-left: -2px;
+    padding: 5px;
+    width: 200px;
+    align-items: center;
+    justify-content: space-around;
 }
 
 #img{
     width: 30px;
 }
-#i-head{
+#i-head, #t-head{
     display: flex;
     background-color: var(--secondary-color);
     color: var(--accent1-color);
+    z-index: 2;
+    position: absolute;
 }
 
-
+#i-head{
+    margin-top: 10px;
+    margin-left: -2px;
+    padding: 5px;
+    width: 250px;
+    align-items: center;
+    justify-content: space-around;
+}
 
 
 
