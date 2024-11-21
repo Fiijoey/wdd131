@@ -7,24 +7,26 @@
     --heading-font: "Montserrat", serif;
     --paragraph-font: "Alegreya", serif;
 }
-img{
+
+img {
     width: 100%;
     height: auto;
 }
 
-*{
+* {
     margin: 0;
     font-family: var(--heading-font);
     margin: 0px;
     padding: 0px;
 }
 
-label{
+label {
     text-align: right;
     font-size: smaller;
     font-weight: 700;
 }
-h2{
+
+h2 {
     font-size: smaller;
     font-weight: 300;
 }
@@ -41,6 +43,7 @@ header {
     text-align: center;
     padding: 1rem;
 }
+
 main {
     grid-column: 1 / 4;
     width: 100%;
@@ -48,17 +51,18 @@ main {
 
 }
 
-#content{
+#content {
     display: grid;
     grid-auto-rows: max-content;
 }
-picture{
+
+picture {
     grid-column: 1 / 10;
     grid-row: 1 / 8;
     width: 100%;
 }
 
-#data{
+#data {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     position: relative;
@@ -74,7 +78,7 @@ picture{
 }
 
 
-#weather{
+#weather {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     position: relative;
@@ -89,7 +93,7 @@ picture{
     gap: 10px;
 }
 
-#t-head{
+#t-head {
     margin-top: 10px;
     margin-left: -2px;
     padding: 5px;
@@ -98,10 +102,13 @@ picture{
     justify-content: space-around;
 }
 
-#icon{
+#icon,
+#dicon {
     width: 30px;
 }
-#i-head, #t-head{
+
+#i-head,
+#t-head {
     display: flex;
     background-color: var(--secondary-color);
     color: var(--accent1-color);
@@ -109,7 +116,7 @@ picture{
     position: absolute;
 }
 
-#i-head{
+#i-head {
     margin-top: 10px;
     margin-left: -2px;
     padding: 5px;
@@ -118,7 +125,7 @@ picture{
     justify-content: space-around;
 }
 
-#t-head h2::after{
+#t-head h2::after {
     content: "   -";
     width: 25px;
 
@@ -136,18 +143,20 @@ footer {
 }
 
 @media (max-width: 740px) {
-    #content{
+    #content {
         display: flex;
         flex-direction: column;
     }
 
-    #data, #weather{
+    #data,
+    #weather {
         width: auto;
         padding-top: 140px;
         margin-left: 0;
     }
 
-    #i-head, #t-head{
+    #i-head,
+    #t-head {
         display: flex;
         flex-direction: column;
         width: 100%;
@@ -155,13 +164,16 @@ footer {
         color: black;
         font-size: 2rem;
     }
-    #i-head h2, #t-head h2{
+
+    #i-head h2,
+    #t-head h2 {
         font-weight: 500;
     }
 
-   #i-head img, #t-head img{
-    width: 60px;
-    padding-top: 15px;
-   }
+    #i-head img,
+    #t-head img {
+        width: 60px;
+        padding-top: 15px;
+    }
 
 }
