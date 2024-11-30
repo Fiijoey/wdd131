@@ -1,0 +1,157 @@
+:root {
+    --heading-font: "Montserrat", serif;
+    --paragraph-font: "Alegreya", serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+img {
+    width: 250px;
+    height: 150px;
+}
+
+main {
+    max-width: 700px;
+    text-align: center;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+main h2 {
+    padding: 20px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.temple-card {
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 16px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    align-content: end;
+}
+
+.temple-card img { 
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+body {
+    font-family: var(--heading-font);
+}
+
+header {
+    display: grid;
+    padding: 20px;
+    background-color: rgb(124, 104, 77);
+    color: #fff;
+    box-shadow: 0 0 30px #333;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+}
+
+nav ul li a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    color: aqua;
+}
+
+nav ul li:hover {
+    border-radius: 20px;
+    background-color: rgb(136, 115, 85);
+    color: black;
+    font-size: 1.2rem;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+.hamburger {
+    display: block;
+
+}
+
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+.nav-tem {
+    margin: 16px 0;
+
+
+}
+
+.nav-menu.active {
+    left: 0;
+}
+
+footer {
+    background: rgb(124, 104, 77);
+    color: rgb(253, 253, 253);
+    padding: 1rem;
+    text-align: center;
+    grid-column: 1 / 4;
+}
+
+@media (max-width: 740px) {
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 80px;
+        gap: 0;
+        flex-direction: column;
+        background-color: rgb(124, 104, 77);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+
+    }
+
+    header {
+        display: block;
+        text-align: center;
+    }
+
+    .navbar {
+        margin-top: 15px;
+    }
+}
