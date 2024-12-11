@@ -12,26 +12,31 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="styles/" />
+    <link rel="stylesheet" href="styles/headfoot.css" />
+    <link rel="stylesheet" href="styles/home.css" />
     <script defer src="scripts/"></script>
     <title>Joseph Fiifi Mensah - Home</title>
 </head>
 
 <body>
     <header>
-        <img src="" alt="logo">
+        <img src="images/fiilogo.png" alt="logo" loading="lazy">
         <nav>
             <a href="home.html">Home</a>
             <a href="about.html">About Me</a>
             <a href="projects.html">Projects Gallary</a>
-            <a href="form.html">Contact Me</a>
+            <div class="button"><a href="form.html">Contact Me</a></div>
         </nav>
     </header>
 
 
     <main>
         <div class="hero">
-            <img src="" alt="Hero image here">
+            <picture>
+                <source media="(min-width: 900px)" srcset="images/altbighero.svg">
+                <source media="(min-width: 600px)" srcset="images/smallhero.svg">
+                <img src="images/altbighero.svg" alt="smilling Fiifi" loading="lazy">
+            </picture>
             <div class="hereText">
                 <p>
 

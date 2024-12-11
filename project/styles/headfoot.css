@@ -1,0 +1,71 @@
+:root {
+    --heading-font: "Montserrat", serif;
+    --paragraph-font: "Lora", serif;
+    --main-color: #008080;
+    --soft-color: #FF7F50;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--paragraph-font);
+}
+
+header {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.837);
+    display: flex;
+    justify-content: space-between;
+}
+
+header img {
+    width: 120px;
+    max-height: 60px;
+    padding: 20px;
+    margin-top: 10px;
+
+}
+
+header nav {
+    font-family: var(--heading-font);
+    padding: 20px;
+}
+
+header nav a {
+    font-family: var(--heading-font);
+    font-weight: 300;
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+
+}
+
+header nav a:hover {
+    cursor: pointer;
+    font-weight: 500;
+    font-size: larger;
+}
+
+header nav .button:hover {
+    background-color: var(--soft-color);
+
+}
+
+header nav .button {
+    background-color: var(--main-color);
+    padding: 10px;
+    display: inline-flex;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+footer {
+    background: black;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    grid-column: 1 / 4;
+}
