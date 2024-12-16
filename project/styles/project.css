@@ -1,0 +1,44 @@
+:root {
+    --heading-font: "Montserrat", serif;
+    --paragraph-font: "Lora", serif;
+    --main-color: #008080;
+    --soft-color: #FF7F50;
+}
+* {
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    max-width: 900px;
+    text-align: center;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+img {
+    width: 250px;
+    height: 150px;
+}
+.temple-card img { 
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+}
+
+.temple-card {
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 16px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    align-content: end;
+}

@@ -32,8 +32,10 @@ main h2 {
 
 .container {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
 }
+    
 
 .temple-card {
     text-align: center;
@@ -42,7 +44,6 @@ main h2 {
     margin: 10px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    align-content: end;
 }
 
 .temple-card img { 
