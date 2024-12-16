@@ -16,7 +16,13 @@ header {
     width: 100%;
     background-color: rgba(0, 0, 0, 0.837);
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    font-size: 1.2vh;
+}
+.cover{
+    display: flex;
+    max-width: 900px;
+    justify-content: space-around;
 }
 
 header img {

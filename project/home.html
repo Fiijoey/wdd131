@@ -20,27 +20,33 @@
 
 <body>
     <header>
-        <img src="images/fiilogo.png" alt="logo" loading="lazy">
-        <nav>
-            <a href="home.html">Home</a>
-            <a href="about.html">About Me</a>
-            <a href="projects.html">Projects Gallary</a>
-            <div class="button"><a href="form.html">Contact Me</a></div>
-        </nav>
+        <div class="cover">
+            <img src="images/fiilogo.png" alt="logo" loading="lazy">
+            <nav>
+                <a href="home.html">Home</a>
+                <a href="about.html">About Me</a>
+                <a href="projects.html">Projects Gallary</a>
+                <div class="button"><a href="form.html">Contact Me</a></div>
+            </nav>
+        </div>
     </header>
 
 
     <main>
         <div class="hero">
-            <picture>
+            <picture class="hero-img">
                 <source media="(min-width: 900px)" srcset="images/altbighero.svg">
                 <source media="(min-width: 600px)" srcset="images/smallhero.svg">
                 <img src="images/altbighero.svg" alt="smilling Fiifi" loading="lazy">
             </picture>
+            <div class="gradient"></div>
             <div class="hereText">
+                <h2>Welcome to my Portfolio</h2>
                 <p>
-
+                    Hello, my name is Fiifi. I build things for the web.
                 </p>
+            </div>
+            <div class="buttons">
                 <button>Contact Me</button>
                 <button>View My Works</button>
             </div>
