@@ -4,10 +4,19 @@
     --main-color: #008080;
     --soft-color: #FF7F50;
 }
+
 * {
     margin: 0px;
     padding: 0;
     box-sizing: border-box;
+}
+
+h2 {
+    font-family: var(--heading-font);
+}
+
+#selected {
+    padding: 20px;
 }
 
 main {
@@ -17,11 +26,13 @@ main {
     display: grid;
     grid-template-columns: 1fr;
 }
+
 img {
     width: 250px;
     height: 150px;
 }
-.temple-card img { 
+
+.project-card img {
     border-radius: 8px;
     margin-top: 10px;
 }
@@ -33,12 +44,27 @@ img {
     gap: 5px;
 }
 
-.temple-card {
+.project-card {
     text-align: center;
     border: 1px solid #ccc;
     padding: 16px;
     margin: 10px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(37, 35, 35, 0.1);
     align-content: end;
+}
+
+.project-card:hover {
+    color: var(--soft-color);
+}
+
+.project-card img:hover {
+    width: 300px;
+    height: 200px;
+}
+
+@media (max-width: 750px) {
+    .container {
+        display: block;
+    }
 }
