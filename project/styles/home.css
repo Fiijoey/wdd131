@@ -17,7 +17,7 @@ main {
     font-family: var(--paragraph-font);
 }
 
-button {
+.buttons button {
     padding: 10px;
     border-radius: 10px;
     background-color: var(--soft-color);
@@ -25,6 +25,13 @@ button {
     border: 0;
     margin-left: 10px;
 
+}
+
+.buttons button:hover {
+    cursor: pointer;
+    font-weight: 500;
+    font-size: larger;
+    background-color: var(--main-color);
 }
 
 .hero {
@@ -64,4 +71,34 @@ h2 {
     padding: 20px;
     padding-top: 30px;
     margin-left: 65px;
+}
+
+@media (max-width: 600px) {
+    .hero {
+        display: block;
+        padding: 10px;
+    }
+
+    .gradient {
+        display: none;
+    }
+
+    main h2,
+    main p {
+        color: black;
+        text-align: left;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        margin: 0;
+    }
+
+    .buttons button {
+        padding-top: 10px;
+        margin: 5px;
+
+    }
 }
