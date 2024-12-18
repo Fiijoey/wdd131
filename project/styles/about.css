@@ -17,8 +17,7 @@ h2 {
 }
 
 .me_all .me_pe {
-    max-width: 200px;
-    height: 200px;
+    width: 250px;
     border-radius: 10px;
 }
 
@@ -53,13 +52,16 @@ main {
     padding-left: 50px;
 
 }
-.button{
+
+.button {
+    text-align: center;
     background-color: var(--main-color);
     padding: 10px;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
 }
+
 .button a {
     font-family: var(--heading-font);
     font-weight: 300;
@@ -68,12 +70,21 @@ main {
     padding: 5px;
 
 }
-.image_intro{
+
+.buttons .button:hover {
+    cursor: pointer;
+    font-weight: 500;
+    font-size: larger;
+    background-color: var(--soft-color);
+}
+
+.image_intro {
     display: flex;
     padding: 50px;
     gap: 60px;
 }
-.ex_skills{
+
+.ex_skills {
     background-color: #0b939367;
     width: 100%;
     border-radius: 5px;
@@ -81,16 +92,20 @@ main {
     gap: 30px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-.skills{
+
+.skills {
     display: flex;
     gap: 50px;
     padding-bottom: 50px;
 }
-.setskills{
+
+.setskills {
+    text-align: center;
     display: flex;
     gap: 15px;
 }
-.yes{
+
+.yes {
     background-color: #FF7F50;
     padding-left: 28px;
     padding-right: 28px;
@@ -98,16 +113,92 @@ main {
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-.yes p{
+
+.yes p {
     font-size: 8px;
     color: #073737;
     font-family: var(--heading-font);
 }
-.soft{
+
+.soft {
     display: flex;
     gap: 50px;
 }
-.soft_icons{
+
+.soft_icons {
     display: flex;
     gap: 15px;
+}
+
+.edu {
+    display: flex;
+    gap: 50px;
+    padding: 30px;
+}
+
+.edu_list {
+    display: flex;
+    gap: 20px;
+
+}
+
+.i {
+    font-style: italic;
+}
+
+@media (max-width: 750px) {
+    .image_intro {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .buttons {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .skills {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .setskills {
+        flex-direction: column;
+        padding: 0;
+        gap: 10px;
+
+    }
+
+    .yes {
+        padding: 5px;
+    }
+
+    .soft {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .soft_icons {
+        flex-direction: column;
+        margin: auto;
+        gap: 10px;
+    }
+
+    .soft_icons img {
+        width: 90px;
+        max-width: 100px;
+    }
+
+    .edu {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .edu_list {
+        flex-direction: column;
+        gap: 10px;
+    }
+
 }
