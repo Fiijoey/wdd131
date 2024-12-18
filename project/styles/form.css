@@ -52,3 +52,18 @@ textarea {
     border: 1px solid #ccc;
     border-radius: 5px;
 }
+
+.button {
+    border-radius: 5px;
+    background-color: var(--soft-color);
+    color: white;
+    border: 0;
+
+}
+
+.button:hover {
+    cursor: pointer;
+    font-weight: 300;
+    font-size: large;
+    background-color: var(--main-color);
+}
