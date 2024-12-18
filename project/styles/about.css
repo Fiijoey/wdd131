@@ -1,0 +1,56 @@
+:root {
+    --heading-font: "Montserrat", serif;
+    --paragraph-font: "Lora", serif;
+    --main-color: #008080;
+    --soft-color: #FF7F50;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--paragraph-font);
+}
+
+h2 {
+    font-family: var(--heading-font);
+}
+
+.me_all .me_pe {
+    max-width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+main {
+    max-width: 100%;
+    display: block;
+}
+
+.allcont {
+    max-width: 900px;
+    display: block;
+    margin: auto;
+    padding: 50px;
+}
+
+.intro {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding-bottom: 30px;
+}
+
+.intro_cover {
+    display: block;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+}
+
+.buttons {
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+}
