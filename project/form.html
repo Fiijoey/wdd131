@@ -12,9 +12,10 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="styles/" />
-    <script defer src="scripts/"></script>
-    <title>Joseph Fiifi Mensah - Home</title>
+    <link rel="stylesheet" href="styles/form.css" />
+    <link rel="stylesheet" href="styles/headfoot.css" />
+    <script defer src="scripts/footer.js"></script>
+    <title>Joseph Fiifi Mensah - Contact form</title>
 </head>
 
 <body>
@@ -23,41 +24,14 @@
             <h1>Contacting Fiifi</h1>
         </header>
         <form action="review.html" method="get">
-            <label for="productName">Product Name:</label>
-            <select id="productName" name="productName" required>
-                <option value="" disabled selected>Select a Product ...</option>
-            </select>
 
-            <label>Overall Rating:</label>
-            <div class="rating">
-                <input type="radio" id="star1" name="rating" value="1" required><label for="star1">☆</label>
-                <input type="radio" id="star2" name="rating" value="2" required><label for="star2">☆</label>
-                <input type="radio" id="star3" name="rating" value="3" required><label for="star3">☆</label>
-                <input type="radio" id="star4" name="rating" value="4" required><label for="star4">☆</label>
-                <input type="radio" id="star5" name="rating" value="5" required><label for="star5">☆</label>
-            </div>
-
-            <label for="installationDate">Date of Installation:</label>
+            <label for="installationDate">Date of Contact:</label>
             <input type="date" id="installationDate" name="installationDate" required>
 
-            <label>Useful Features:</label>
-            <div class="feat">
-                <div><input type="checkbox" id="feature4" name="features" value="Feature 4"><label
-                        for="feature4">Design</label></div>
-                <div><input type="checkbox" id="feature1" name="features" value="Feature 1"><label
-                        for="feature1">Durability</label></div>
-                <div><input type="checkbox" id="feature2" name="features" value="Feature 2"><label for="feature2">Ease
-                        of Use</label></div>
-                <div><input type="checkbox" id="feature3" name="features" value="Feature 3"><label
-                        for="feature3">Performance</label></div>
-                <div><input type="checkbox" id="feature5" name="features" value="Feature 5"><label
-                        for="feature5">Quality</label></div>
-            </div>
-
-            <label for="review">Written Review:</label>
+            <label for="review">Written Your Message:</label>
             <textarea id="review" name="review"></textarea>
 
-            <label for="userName">User Name:</label>
+            <label for="userName">Full Name:</label>
             <input type="text" id="userName" name="userName">
 
             <input type="submit" value="Cantact Fiifi">
